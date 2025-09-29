@@ -1,18 +1,25 @@
 function handleError(e) {
-  console.log('woof!', 'error captured', e.message);
+  console.log('woof!', 'error captured', e);
   return e;
 }
 
-export function withSobaka(cb, ctx) {
-  return cb.constructor.name === 'AsyncFunction'
+export const budka = (logger = handleError) => {
+  return function withSobaka (cb) {
+    return cb.constructor.name === 'AsyncFunction'
     ? async function (...args) {
-        cb.apply(ctx || this, args).catch(handleError);
+        cb(...args).catch(logger);
       }
     : function (...args) {
         try {
-          cb.apply(ctx || this, args);
+          cb(...args);
         } catch (e) {
-          handleError(e);
+          logger(e);
         }
       };
+  }
+
 }
+
+
+
+  
