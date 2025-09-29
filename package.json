@@ -1,0 +1,25 @@
+{
+  "name": "sobaka-js",
+  "version": "0.0.1",
+  "description": "A tiny wrapper that keeps errors from breaking into your app. Woof!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpouzko/sobaka.git"
+  },
+  "keywords": [
+    "error-handling",
+    "javascript",
+    "fp"
+  ],
+  "author": "m.pouzko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpouzko/sobaka/issues"
+  },
+  "homepage": "https://github.com/mpouzko/sobaka#readme"
+}
