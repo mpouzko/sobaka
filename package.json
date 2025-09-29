@@ -1,12 +1,16 @@
 {
-  "name": "sobaka-js",
+  "name": "sobaka",
   "version": "0.0.1",
   "description": "A tiny wrapper that keeps errors from breaking into your app. Woof!",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "build": "npx babel src --out-dir dist"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mpouzko/sobaka.git"
@@ -21,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/mpouzko/sobaka/issues"
   },
-  "homepage": "https://github.com/mpouzko/sobaka#readme"
+  "homepage": "https://github.com/mpouzko/sobaka#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3"
+  }
 }

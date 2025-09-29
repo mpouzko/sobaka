@@ -1,1 +1,4 @@
 .history
+dist
+.npmrc
+node_modules
