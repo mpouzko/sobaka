@@ -1,6 +1,6 @@
 {
   "name": "sobaka",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny wrapper that keeps errors from breaking into your app. Woof!",
   "main": "index.js",
   "type": "module",
